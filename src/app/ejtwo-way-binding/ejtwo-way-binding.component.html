@@ -1,0 +1,40 @@
+<div>
+  <h2>Practicando two way binding</h2>
+  <label type="text">Ingrese nombre</label>
+<input type ="text" class="form-control"[(ngModel)]="text1">
+<label type="text">Ingrese apellido</label>
+<input type ="text" class="form-control"[(ngModel)]="text2">
+
+
+<h3>{{text1}}, {{text2}}</h3>
+
+</div>
+
+<div class="container">
+    <h2>Practicando directiva ngIf parte 1</h2>
+
+  <label>Nombre y Apellidos</label>
+  
+  <input type="text"
+  
+  class="form-control" [(ngModel)]="nombre"   placeholder="Complete su nombre y apellidos">
+  
+  <button type="submit" class="btn btn-primary"  *ngIf="nombre">Enviar</button>
+  
+  </div>
+
+  
+  <div class="container">
+      <h2>Practicando directiva ngIf parte 2--Aki peta el cerebro un poco!</h2>
+      <h3>Cual es la capital de españa?</h3>
+      <input type="text" class="form-control" [(ngModel)]="capital">
+      <p *ngIf="!capital; else correcto">Complete la pregunta</p>
+      <ng-template #correcto>
+        <h4 *ngIf="setResultado();else incorrecto">!correcto!</h4>
+      </ng-template>
+      <ng-template #incorrecto>
+          <h4 >Lo siento de nuevo!</h4>
+      </ng-template>
+  </div>
+
+   

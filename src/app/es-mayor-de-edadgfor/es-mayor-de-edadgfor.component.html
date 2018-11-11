@@ -1,0 +1,18 @@
+<p>
+  Tabla de los sueldos de las personas mayores de 30 años son:
+</p>
+ 
+ <table style=" border-collapse: collapse; border:solid" >
+<tr style=" border-collapse: collapse; border:solid">
+  <th>
+    Sueldos
+  </th>
+</tr>
+<tr *ngFor="let emp of empleados" class="list-group-item" style=" border-collapse: collapse; border:solid">      
+    <ng-container *ngIf='emp.edad >= 30'>
+        <td>{{emp.sueldo}}</td>
+    </ng-container>
+
+</tr>
+
+ </table>

@@ -1,0 +1,17 @@
+.table-articles, tr, td{
+
+border: solid;
+border-collapse: collapse;
+
+}
+
+.table tr.active td  {
+    background-color:#123456 !important;
+    color: white;
+    border: solid;
+    border-collapse: collapse;
+  }
+.btn ,.active{
+    background-color:#008CBA !important;
+    color: white;
+}

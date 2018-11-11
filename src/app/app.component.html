@@ -1,0 +1,80 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <p>Nombre del Empleado:{{nombre}}</p>
+  <p>Edad:{{edad}}</p>  
+  <p>Los últimos tres sueldos son: {{sueldos[0]}}, {{sueldos[1]}} y {{sueldos[2]}}</p>
+  <p>En los últimos 3 meses ha ganado: {{ultimos3Sueldos()}}</p>
+  <p>{{esActivo()}}</p>
+</div>
+
+<div>
+  <h2>Tratando el componente Empleado</h2>
+  <p>El nombre del empleado emp es:{{this.emp.getNombre()}}</p>
+  <p>El suledo del empleado emp es:{{emp.getSueldo()}}</p>
+  <p>El número de empleados es:{{emp.getNumEmpleados()}}</p>
+  <p>La especialidad del técnico  es:{{tec.getEspecialidad()}}</p>
+
+  <h2>Tratando el componente FigurasGeométricas</h2>
+  <p>El area del circulo es:{{cir.calcularArea()}}</p>
+  <p>El area del rectangulo es:{{rec.calcularArea()}}</p>
+  <p>El perímetro del círculo es:{{cir.calcularPerimetro()}}</p>
+  <p>La perímetro del rectangulo es:{{rec.calcularPerimetro()}}</p>
+
+  <p>El area del circulo implementando la interfaz es:{{cirInt.calcularArea()}}</p>
+  <p>El area del rectangulo implementando la interfaz es:{{recInt.calcularArea()}}</p>
+  <p>El perímetro del círculo implementando la interfaz es:{{cirInt.calcularPerimetro()}}</p>
+  <p>El perímetro del rectángulo implementando la interfaz es:{{recInt.calcularPerimetro()}}</p>
+  <hr>
+  <app-ejpropertybinding></app-ejpropertybinding>
+  <hr>
+  <app-ejeventbinding></app-ejeventbinding>
+  <hr>
+  <app-ejtwo-way-binding></app-ejtwo-way-binding>
+
+  <div class="container" >
+    <h3>Ejemplo de directiva ngFor</h3>
+    <hr>
+    <app-ejdirectivangfor></app-ejdirectivangfor>
+   </div>
+   
+
+   <div class="container" >
+    <h3>Ejemplo de directiva ngFor selectiva para empleados</h3>
+    <hr>
+    <app-es-mayor-de-edadgfor></app-es-mayor-de-edadgfor>
+   </div>
+   <hr>
+    <div class="container" >
+    <h3>Ejemplo dados con estilos</h3>
+    <app-dados></app-dados>
+
+    </div>
+
+    <div class="container">
+      <app-articulos></app-articulos>
+    </div>
+
+    <p>Ejercicio 26 de Directivas personalizadas</p>
+    <p>Este es un párrafo normal</p>
+    <p appRedblack>Este es un párrafo con directivas personalizadas</p>
+
+    <div class="container" > 
+      <h3>Ejemplo de uso de @Input</h3> 
+      <hr> 
+      <app-padre></app-padre> 
+    </div> 
+
+    <div class="container" > 
+      <h3>App dados aleatorios</h3> 
+      <hr> 
+      <app-dados-aleatorios></app-dados-aleatorios> 
+    </div> 
+
+    
+  
+
+  
+</div>
+
+
+
